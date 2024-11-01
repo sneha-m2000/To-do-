@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+/* General body styling */
+body {
+  font-family: "Spicy Rice", serif;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+/* Navbar styling */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* To-Do List container styling */
+#app {
+  margin-top: 80px; /* Adds space so content appears below the fixed navbar */
+  text-align: center;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Input container */
+.input-container {
+  display: flex; /* Use flexbox to align items */
+  margin-bottom: 10px; /* Space below the input */
+}
+
+/* Small button styling */
+#addTaskBtn {
+  padding: 10px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px 0 0 4px; /* Rounded corners on the left */
+  font-size: 14px; /* Smaller font size */
+  height: 40px; /* Match the input height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Input field styling */
+#taskInput {
+  width: 100%; /* Full width */
+  padding: 10px; /* Standard padding */
+  border: 1px solid  black; /* SByle the input border */
+  border-radius: 0 4px 4px 0; /* Rounded corners on the right */
+  font-size: 16px;
+}
+
+/* Task list styling */
+#taskList {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#taskList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 4px;
+}
+
+/* Task text and button icons */
+.task-text {
+  flex: 1;
+  text-align: left;
+  font-size: 18px;
+}
+
+button.deleteBtn,
+button.editBtn,
+button.completeBtn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+button.deleteBtn:hover {
+  color: #ff0000;
+}
+
+button.editBtn:hover {
+  color: #ffc107;
+}
+
+button.completeBtn:hover {
+  color: #00ff00;
+}
